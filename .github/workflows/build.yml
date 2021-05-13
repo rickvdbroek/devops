@@ -36,7 +36,7 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
-          source: build
+          source: ./
           target: /var/www/html/$GITHUB_REPOSITORY
   # release:
   #   name: Release
