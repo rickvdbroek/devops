@@ -28,6 +28,8 @@ jobs:
     steps:
       - name: Download artifact
         uses: actions/download-artifact@v1
+        with:
+          name: $GITHUB_REPOSITORY
       - name: Copy files to VPS
         uses: appleboy/scp-action@master
         with:
