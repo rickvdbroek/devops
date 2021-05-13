@@ -37,7 +37,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.KEY }}
           rm: true
-          source: ./
+          source: ./${{ secrets.PROJECT_NAME }}
           target: /var/www/html/${{ secrets.PROJECT_NAME }}
   # release:
   #   name: Release
